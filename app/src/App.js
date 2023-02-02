@@ -1,24 +1,19 @@
 import React, { useState } from "react";
-import ReactDOM from 'react-dom/client';
 import List from "./List";
 
 function App() {
-  let [liste, addList] = useState([])
+  const [list, setList] = useState([]);
+  const [todo, setTodo] = useState('')
 
-  const clearToPlaceholder = (value) => {
-    value.value = '';
-  }
-  function createToDo() {
-
-    let value = document.getElementById('Appa').firstChild;
-    if (value.value != '') {
+  function createToDo(todo) {
+    if (todo) {
       let obj = {
         id: Math.random(),
-        text: value.value,
+        text: todo,
       }
 
-      addList([...liste, obj])
-      clearToPlaceholder(value)
+      setList([...list, obj])
+      setTodo('');
     }
   }
 
@@ -32,10 +27,12 @@ function App() {
     <div className="App" id='Appa'>
       <input
         placeholder="create"
+        value={todo}
+        onChange={(e) => setTodo(e.target.value)}
         onKeyDownCapture={keyPress}></input>
-      <button onClick={createToDo}>send</button>
+      <button onClick={() => createToDo(todo)}>send</button>
       <div className='toDoDiv'>
-        {liste.map((o) => <List text={o.text} key={o.id} id={o.id} />)}
+        {list.map((o) => <List text={o.text} key={o.id} id={o.id} setList={setList}/>)}
       </div>
     </div >
   );
