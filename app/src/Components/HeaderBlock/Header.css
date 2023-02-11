@@ -1,0 +1,11 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 2vw 2vw 0 2vw;
+    border: 2px solid black;
+    padding: 1vw;
+}
+
+button {
+    margin: 0 1vw;
+}

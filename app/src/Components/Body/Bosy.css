@@ -1,0 +1,155 @@
+.Body {
+    font-size: 1vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Header {
+    background-color: #9090;
+}
+
+.SearchBox {
+    display: flex;
+    justify-content: space-between;
+    width: 92vw;
+    margin-top: 5vw;
+}
+
+.Post {
+    margin-top: 5vw;
+    width: 80vw;
+    display: flex;
+}
+
+.PostMainText {
+    border: 2px solid black;
+    width: 40vw;
+    padding: 1vw;
+}
+
+.Title {
+    font-size: 2vw;
+    font-weight: 900;
+}
+
+.Info {
+    border: 2px solid black;
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1vw;
+}
+
+.Info>div>button {
+    margin-left: 4vw;
+}
+
+.Details {
+    width: 30vw;
+    overflow: hidden;
+}
+
+.EditBox {
+    margin-top: 5vw;
+
+}
+
+.EditMainHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 94vw;
+    margin-left: 2vw;
+}
+
+.EditMainHeader>div>input {
+    width: 25vw;
+    height: 2vw;
+}
+
+.EditMainHeader>div>p {
+    font-size: 2vw;
+}
+
+.InputDescription {
+    width: 87vw;
+    height: 15vw;
+}
+
+.InputDescription::placeholder {
+    top: 1vw;
+    left: 1vw;
+    position: absolute;
+}
+
+.EditMainBody {
+    border: 2px solid black;
+    margin-left: 5vw;
+    margin-top: 4vw;
+    width: 87.45vw;
+}
+
+.AuthorsInfo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.CretingAutorsPanel {
+    margin-top: 5vw;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2vw;
+    align-items: center;
+}
+
+.CreateAuthorNameInput {
+    width: 40vw;
+}
+
+.ButtonToCreateAuthor {
+    width: 10vw;
+}
+
+.AddAuthorToPost {
+    margin-right: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25vw;
+    margin-top: 5vw;
+    border: 2px solid black;
+}
+
+.ShowAuthorsName {
+    display: flex;
+    width: 25vw;
+    margin: .5vw 0;
+    justify-content: space-between;
+}
+
+.MiniInfo {
+    display: flex;
+    margin-top: 2vw;
+    justify-content: space-between;
+}
+
+.MicroInfo {
+    margin-top: 5vw;
+    border: 2px solid black;
+    margin-left: 2vw;
+}
+
+.ApllyedAuthors {
+    margin-right: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25vw;
+}
+
+.ListAplyedAuthors {
+    margin-top: 5vw;
+    border: 2px solid black;
+}
